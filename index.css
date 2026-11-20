@@ -1,0 +1,230 @@
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #ffffff;
+}
+
+html { 
+    scroll-behavior: smooth; 
+}
+
+.navbar-swu {
+    background-color: #ffffff !important; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); 
+    padding: 15px 0;
+}
+
+.navbar-swu .nav-link {
+    color: #000000 !important; 
+    font-weight: 500;
+}
+
+/* Navbar Link เมื่อเอาเมาส์ไปชี้ */
+.navbar-swu .nav-link:hover {
+    color: #931e1e !important;
+    text-decoration: underline !important;
+    /* เพิ่มบรรทัดนี้เพื่อกำหนดระยะห่างของเส้น */
+    text-underline-offset: 8px; 
+    /* ปรับความหนาของเส้น (ถ้าต้องการ) */
+    text-decoration-thickness: 2px;
+}
+
+/* ส่วนของเมนูย่อย (Dropdown) ปรับให้เหมือนกันเวลาเอาเมาส์ไปชี้ */
+.dropdown-item:hover {
+    color: #931e1e !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px;
+    background-color: transparent !important;
+}
+
+.navbar-swu .navbar-brand {
+    color: #000000 !important;
+}
+
+
+
+/* --- ส่วนของ Hero (แบนเนอร์ด้านบน) Slide 1 --- */
+.hero-section.slide-1 {
+    background: linear-gradient(rgba(193, 53, 53, 0.6), rgba(248, 115, 115, 0.6)), 
+                url('./img/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    padding: 150px 0;
+    text-align: center;
+}
+
+/* Slide 2: ไว้อาลัย */
+.hero-section.slide-2 {
+    background: url('./img/r.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 200px 0; 
+}
+
+/* Slide 3: ข่าวประชาสัมพันธ์ */
+.hero-section.slide-3 {
+    background: linear-gradient(rgba(147, 30, 30, 0.4), rgba(147, 30, 30, 0.4)), 
+                url('./img/slide2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+}
+
+/* Slide 4: กิจกรรมสาขาวิชา */
+.hero-section.slide-4 {
+    background: linear-gradient(rgba(147, 30, 30, 0.4), rgba(147, 30, 30, 0.4)), 
+                url('./img/slide3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    padding: 200px 0;
+    text-align: center;
+}
+
+/* --- Slide 3 Custom Colors --- */
+/* สีหัวข้อ Slide 3 */
+.slide-title-custom-3 {
+    color: #ffffff; /* เปลี่ยนโค้ดสีที่นี่ */
+}
+
+/* สีปุ่ม Slide 3 */
+.btn-custom-3 {
+    background-color: #f9ed95; /* สีพื้นหลังปุ่ม */
+    color: #0a0a0a;               /* สีตัวอักษรในปุ่ม */
+    border: none;
+    transition: 0.3s;
+}
+.btn-custom-2:hover {
+    background-color: #e0c229; /* สีตอนเอาเม้าส์วาง */
+    color: #fff;
+}
+
+/* --- Slide 4 Custom Colors --- */
+/* สีหัวข้อ Slide 4 */
+.slide-title-custom-3 {
+    color: #ffffff; /* เปลี่ยนโค้ดสีที่นี่ */
+}
+
+/* สีปุ่ม Slide 4 */
+.btn-custom-4 {
+    background-color: #a8dadc; /* สีพื้นหลังปุ่ม */
+    color: #0a0a0a;               /* สีตัวอักษรในปุ่ม */
+    border: none;
+    transition: 0.3s;
+}
+.btn-custom-4:hover {
+    background-color: #457b9d; /* สีตอนเอาเม้าส์วาง */
+    color: #fff;
+}
+
+/* บังคับซ่อนทุกอย่างที่เป็นส่วนควบคุมของ Carousel */
+#swuCarousel .carousel-control-prev,
+#swuCarousel .carousel-control-next,
+#swuCarousel .carousel-indicators {
+    display: none !important;
+}
+
+/* เมื่อเอาเมาส์มาชี้ที่ Slide ให้เปลี่ยนจากซ่อน เป็นแสดงผล */
+#swuCarousel:hover .carousel-control-prev,
+#swuCarousel:hover .carousel-control-next,
+#swuCarousel:hover .carousel-indicators {
+    display: flex !important; /* ใช้ flex เพื่อให้ปุ่มจัดกลางตามมาตรฐาน Bootstrap */
+}
+
+/* 1. ขยายพื้นที่ปุ่มให้กว้างขึ้น เพื่อให้เราดันลูกศรไปชิดขอบจอได้จริง */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10vw !important; /* เพิ่มพื้นที่ให้ปุ่มควบคุมกว้างขึ้นเป็น 10% ของจอ */
+}
+
+/* 2. ดันลูกศรให้ไปชิดขอบจอ  */
+.carousel-control-prev {
+    left: 0 !important; 
+}
+.carousel-control-next {
+    right: 0 !important;
+}
+
+/* 3. ทำให้หัวลูกศร "หนา" และ "ใหญ่" ขึ้นแบบสะใจ */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+    /* เพิ่มความหนาด้วยเส้น Stroke */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath stroke='%23fff' stroke-width='1.5' stroke-linecap='round' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+/* สลับด้านลูกศรขวาให้หนาเท่ากัน */
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath stroke='%23fff' stroke-width='1.5' stroke-linecap='round' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/* ขนาดตัวอักษร หลักสูตร */
+.course-info-text {
+    font-size: 1.2rem; 
+    line-height: 1.8;  
+}
+
+/* --- ปุ่มสีแดง มศว --- */
+.btn-swu {
+    background-color: #ae2727;
+    color: white !important; /* บังคับตัวหนังสือสีขาว */
+    border-radius: 25px;
+    padding: 10px 30px;
+    border: none;
+    transition: 0.3s;
+}
+
+/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ปุ่ม */
+.btn-swu:hover {
+    background-color: #dc3434;
+    color: white !important; 
+    transform: scale(1.05); 
+}
+
+/* --- การ์ดข่าสาร & กิจกรรม --- */
+
+/* 1. ตั้งค่า Transition และ Cursor พื้นฐาน */
+.card-news, .card-activities {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 2. เมื่อเอาเมาส์มาชี้ (Hover) ให้เปลี่ยนพื้นหลังและยกตัวขึ้น */
+.card-news:hover, .card-activities:hover {
+    background-color: #bb1c1a !important; 
+    border-color: #bb1c1a !important;    
+    transform: translateY(-8px);         
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 3. เมื่อ Hover ให้เปลี่ยนสีลูกๆ ทุกตัวข้างในเป็นสีขาว */
+.card-news:hover *, 
+.card-activities:hover * {
+    color: #ffffff !important;
+}
+
+/* เปลี่ยนสีปุ่ม Read More เป็นสีขาวเมื่อ Hover */
+.card-news:hover a, .card-activities:hover a {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* --- เอฟเฟกต์ไอคอน Footer (transition-hover) --- */
+.transition-hover {
+    transition: opacity 0.3s, transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.transition-hover:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #ffc107 !important; /* เปลี่ยนเป็นสีเหลืองทองตามคอมเมนต์ */
+}
+
+/* สร้างระยะเผื่อให้กับ Section เมื่อถูกกดลิงก์มาที่หลักสูตร */
+.anchor-section {
+    scroll-margin-top: 100px; /* เว้นระยะด้านบนไว้ 100px ก่อนจะถึงหัวข้อ */
+}
