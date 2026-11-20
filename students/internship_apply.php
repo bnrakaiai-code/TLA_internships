@@ -12,7 +12,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>ยื่นคำร้องขอฝึกงาน | TLA</title>
+    <title>ยื่นคำร้องขอการสหกิจศึกษา | TLA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -65,7 +65,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
 <div class="container form-container">
     <div class="card card-form">
         <div class="card-header-swu text-center">
-            <h3 class="mb-0 fw-bold"><i class="bi bi-file-earmark-text me-2"></i> แบบฟอร์มขอเข้าฝึกงาน</h3>
+            <h3 class="mb-0 fw-bold"><i class="bi bi-file-earmark-text me-2"></i> แบบฟอร์มขอการสหกิจศึกษา</h3>
             <p class="mb-0 opacity-75 mt-2">กรุณากรอกข้อมูลให้ครบถ้วนเพื่อดำเนินการออกหนังสือขอความอนุเคราะห์</p>
         </div>
         <div class="card-body p-4 p-md-5">
@@ -74,7 +74,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
                 <h5 class="section-title" style="margin-top: 0;">ข้อมูลผู้ยื่นคำร้อง</h5>
                 <div class="row mb-4">
                     <div class="col-md-6 mb-3">
-                        <label class="form-label fw-bold text-muted">รหัสนิสิต</label>
+                        <label class="form-label fw-bold text-muted">รหัสนักศึกษา/นิสิต</label>
                         <input type="text" class="form-control bg-light" value="<?php echo $_SESSION['user_id']; ?>" readonly>
                     </div>
                     <div class="col-md-6 mb-3">
@@ -106,19 +106,19 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
                     </div>
                 </div>
 
-                <h5 class="section-title">รายละเอียดการฝึกงาน</h5>
+                <h5 class="section-title">รายละเอียดการสหกิจศึกษา</h5>
                 <div class="mb-3">
-                    <label class="form-label fw-bold">ตำแหน่งที่เข้าฝึกงาน <span class="text-danger">*</span></label>
+                    <label class="form-label fw-bold">ตำแหน่งที่เข้าการสหกิจศึกษา <span class="text-danger">*</span></label>
                     <input type="text" name="position_title" class="form-control" placeholder="เช่น Software Developer, Assistant Librarian" required>
                 </div>
 
                 <div class="row mb-4">
                     <div class="col-md-6 mb-3">
-                        <label class="form-label fw-bold">วันที่เริ่มฝึกงาน <span class="text-danger">*</span></label>
+                        <label class="form-label fw-bold">วันที่เริ่มการสหกิจศึกษา <span class="text-danger">*</span></label>
                         <input type="date" name="start_date" class="form-control" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label class="form-label fw-bold">วันที่สิ้นสุด <span class="text-danger">*</span></label>
+                        <label class="form-label fw-bold">วันที่สิ้นสุดการสหกิจศึกษา <span class="text-danger">*</span></label>
                         <input type="date" name="end_date" class="form-control" required>
                     </div>
                 </div>
@@ -126,7 +126,7 @@ if (!isset($_SESSION['user_id']) || $_SESSION['role'] !== 'student') {
                 <h5 class="section-title">เอกสารแนบ</h5>
                 <div class="mb-4">
                     <label class="form-label fw-bold">แนบไฟล์แบบฟอร์มขอฝึกงาน <span class="text-danger">*</span></label>
-                    <p class="mb-0 opacity-75 mt-2">ตั้งชื่อไฟล์เป็นรหัสนิสิตเท่านั้น</p>
+                    <p class="mb-0 opacity-75 mt-2">ตั้งชื่อไฟล์เป็นรหัสนักศึกษา/นิสิตเท่านั้น</p>
                     <input type="file" name="request_document" class="form-control" accept=".pdf,.doc,.docx" required>
                     <div class="form-text text-muted mt-2">
                         <i class="bi bi-info-circle me-1"></i> รองรับไฟล์นามสกุล .pdf, .doc, .docx เท่านั้น

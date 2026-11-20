@@ -132,7 +132,7 @@ $pending_requests = $stmt_requests->fetchAll(PDO::FETCH_ASSOC);
 
             <div class="welcome-section shadow-sm mb-4">
                 <h2 class="fw-bold h4">ระบบจัดการสำหรับอาจารย์</h2>
-                <p class="text-muted mb-0 small">จัดการคำร้องขอฝึกงานของ นักศึกษา/นิสิต ในที่ปรึกษา/สาขาวิชา</p>
+                <p class="text-muted mb-0 small">จัดการคำร้องขอการสหกิจศึกษาของนักศึกษา/นิสิต ในที่ปรึกษา/สาขาวิชา</p>
             </div>
 
             <div class="row mb-4">

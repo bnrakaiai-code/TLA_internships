@@ -132,7 +132,7 @@ $all_requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 pt-5 pb-4">
             
-            <h3 class="fw-bold mb-4">ประวัติคำร้องของนิสิตทั้งหมด</h3>
+            <h3 class="fw-bold mb-4">ประวัติคำร้องของนักศึกษา/นิสิตทั้งหมด</h3>
             
             <div class="search-container mb-3"> 
                 <form method="GET" action="view_all.php">
@@ -141,7 +141,7 @@ $all_requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <input type="text" name="search" placeholder="ค้นหาคำร้องของ นิสิต" value="<?= htmlspecialchars($search) ?>">
                         
                         <select name="type" style="margin-left: 30px; margin-right: 15px; border: 1px solid #ddd; border-radius: 8px; padding: 5px 15px; background-color: white; cursor: pointer;">
-                            <option value="student">นิสิต</option>
+                            <option value="student">นักศึกษา/นิสิต</option>
                         </select>
 
                         <button type="submit" 
@@ -166,8 +166,8 @@ $all_requests = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <thead class="table-light">
                             <tr>
                                 <th>รหัสคำร้อง</th>
-                                <th>รหัสนิสิต</th>
-                                <th>ชื่อนิสิต</th>
+                                <th>รหัสนักศึกษา/นิสิต</th>
+                                <th>ชื่อนักศึกษา/นิสิต</th>
                                 <th>วันที่ยื่นเรื่อง</th>
                                 <th>รายละเอียดข้อมูล</th>
                                 <th>สถานะปัจจุบัน</th>

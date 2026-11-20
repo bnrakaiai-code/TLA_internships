@@ -127,13 +127,13 @@ try {
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4 main-content">
             <div class="welcome-section shadow-sm mb-4">
                 <h2 class="fw-bold h4">ระบบจัดการสำหรับเจ้าหน้าที่</h2>
-                <p class="text-muted mb-0 small">ตรวจสอบสถานะการฝึกงานของนิสิต</p>
+                <p class="text-muted mb-0 small">ตรวจสอบสถานะการสหกิจศึกษาของนิสิต</p>
             </div>
 
             <div class="row g-3 mb-4">
                 <div class="col-12 col-sm-6 col-xl-4">
                     <div class="card card-custom p-4 bg-white border-start border-primary border-5 h-100">
-                        <h6 class="text-muted small">คำยื่นขอฝึกงานของนิสิต</h6>
+                        <h6 class="text-muted small">คำยื่นขอสหกิจศึกษาของนิสิต</h6>
                         <h2 class="fw-bold mb-0 text-primary"><?php echo $count_student; ?> <small class="fs-6 text-muted">รายการ</small></h2>
                     </div>
                 </div>

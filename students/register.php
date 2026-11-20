@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="register-card w-100">
         <div class="text-center mb-4">
-            <h4 class="fw-bold" style="color: #931e1e;">สร้างบัญชีนิสิตใหม่</h4>
+            <h4 class="fw-bold" style="color: #931e1e;">สร้างบัญชีนักศึกษา/นิสิตใหม่</h4>
             <p class="text-muted small">ระบบจัดการการสหกิจศึกษา</p>
         </div>
 
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form action="register.php" method="POST">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <label class="form-label">รหัสนิสิต <span class="text-danger">*</span></label>
+                    <label class="form-label">รหัสนักศึกษา/นิสิต <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" name="student_id" maxlength="11" placeholder="เช่น 67101010123" required>
                 </div>
                 <div class="col-md-6 mb-3">

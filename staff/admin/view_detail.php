@@ -115,10 +115,10 @@ try {
 
                 <div class="card-body p-4 p-md-5 bg-white">
                     
-                    <h5 class="section-title" style="margin-top: 0;">ข้อมูลนิสิต</h5>
+                    <h5 class="section-title" style="margin-top: 0;">ข้อมูลนักศึกษา/นิสิต</h5>
                     <div class="row">
                         <div class="col-md-4">
-                            <label class="info-label">รหัสนิสิต</label>
+                            <label class="info-label">รหัสนักศึกษา/นิสิต</label>
                             <div class="info-value"><?= htmlspecialchars($req['student_id']) ?></div>
                         </div>
                         <div class="col-md-8">
