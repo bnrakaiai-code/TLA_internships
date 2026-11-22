@@ -160,7 +160,7 @@ try {
                         <table class="table table-hover align-middle mb-0" style="min-width: 800px;">
                             <thead class="table-light">
                                 <tr>
-                                    <th class="ps-4">รหัสนิสิต</th>
+                                    <th class="ps-4">รหัสนักศึกษา/นิสิต</th>
                                     <th>ชื่อ-นามสกุล</th>
                                     <th>บริษัท</th>
                                     <th>วันที่ส่ง</th>
